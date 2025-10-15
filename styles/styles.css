@@ -11,30 +11,32 @@
  */
 
 :root {
-  /* colors */
+  /* colors - Wells Fargo brand */
   --background-color: white;
   --light-color: #f8f8f8;
   --dark-color: #505050;
-  --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+  --text-color: #3b3331; /* Wells Fargo text color */
+  --link-color: #5a469b; /* Wells Fargo link purple */
+  --link-hover-color: #3b2e66; /* Darker purple for hover */
+  --primary-button-color: #d71e28; /* Wells Fargo red */
+  --primary-button-hover: #b01820; /* Darker red for hover */
 
-  /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  /* fonts - Wells Fargo brand */
+  --body-font-family: 'WF-Sans', Verdana, Arial, Helvetica, sans-serif;
+  --heading-font-family: 'WF-Sans', Verdana, sans-serif;
 
   /* body sizes */
-  --body-font-size-m: 22px;
-  --body-font-size-s: 19px;
-  --body-font-size-xs: 17px;
+  --body-font-size-m: 18px;
+  --body-font-size-s: 16px;
+  --body-font-size-xs: 15px;
 
   /* heading sizes */
-  --heading-font-size-xxl: 55px;
-  --heading-font-size-xl: 44px;
-  --heading-font-size-l: 34px;
-  --heading-font-size-m: 27px;
-  --heading-font-size-s: 24px;
-  --heading-font-size-xs: 22px;
+  --heading-font-size-xxl: 40px;
+  --heading-font-size-xl: 32px;
+  --heading-font-size-l: 26px;
+  --heading-font-size-m: 20px;
+  --heading-font-size-s: 18px;
+  --heading-font-size-xs: 17px;
 
   /* nav height */
   --nav-height: 64px;
@@ -77,7 +79,7 @@ body {
   color: var(--text-color);
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);
-  line-height: 1.6;
+  line-height: 1.55; /* Wells Fargo line-height (28px/18px) */
 }
 
 body.appear {
@@ -165,23 +167,24 @@ a:hover {
   text-decoration: underline;
 }
 
-/* buttons */
+/* buttons - Wells Fargo style */
 a.button:any-link,
 button {
   box-sizing: border-box;
   display: inline-block;
   max-width: 100%;
   margin: 12px 0;
-  border: 2px solid transparent;
-  border-radius: 2.4em;
-  padding: 0.5em 1.2em;
+  border: none;
+  border-radius: 24px;
+  padding: 10px 24px;
   font-family: var(--body-font-family);
   font-style: normal;
-  font-weight: 500;
-  line-height: 1.25;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 22px;
   text-align: center;
   text-decoration: none;
-  background-color: var(--link-color);
+  background-color: var(--primary-button-color);
   color: var(--background-color);
   cursor: pointer;
   overflow: hidden;
@@ -193,7 +196,7 @@ a.button:hover,
 a.button:focus,
 button:hover,
 button:focus {
-  background-color: var(--link-hover-color);
+  background-color: var(--primary-button-hover);
   cursor: pointer;
 }
 

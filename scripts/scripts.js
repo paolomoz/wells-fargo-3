@@ -64,7 +64,7 @@ function buildAutoBlocks(main) {
       });
     }
 
-    buildHeroBlock(main);
+    // buildHeroBlock(main); // Disabled: hero blocks should be explicitly authored, not auto-generated
   } catch (error) {
     // eslint-disable-next-line no-console
     console.error('Auto Blocking failed', error);

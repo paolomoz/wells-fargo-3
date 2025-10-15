@@ -1,0 +1,333 @@
+.cards5-container .cards5-wrapper {
+  max-width: 1110px;
+  padding: 0 12px;
+}
+
+.cards5 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px 25px;
+  padding: 0;
+  justify-items: center;
+}
+
+/* Individual card container */
+.cards5 > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Card link wrapper */
+.cards5 > div > div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+/* Card inner wrapper with border and background - Background+Border+Shadow */
+.cards5 > div > div:first-child > div {
+  background-color: #fff;
+  border: 1px solid #e2dede;
+  border-style: solid;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 1px;
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+/* Image wrapper container */
+.cards5 > div > div:first-child > div > div:first-child {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+  padding: 0 0 4.5px;
+  position: relative;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+/* Image element container */
+.cards5 > div > div:first-child > div > div:first-child > div {
+  height: 222px;
+  position: relative;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+/* Picture element */
+.cards5 picture {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.cards5 img {
+  position: absolute;
+  left: 0;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  object-fit: cover;
+  display: block;
+}
+
+/* Content area - Card body container */
+.cards5 > div > div:first-child > div > div:last-child {
+  display: flex;
+  flex-direction: column;
+  isolation: isolate;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px 24px 24px;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  flex-shrink: 0;
+  min-height: 250px;
+}
+
+/* Title section wrapper with margin */
+.cards5 > div > div:first-child > div > div:last-child > div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 0 20px;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+/* Title section with yellow accent */
+.cards5 h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 0 0;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  flex-shrink: 0;
+  margin: 0;
+  font-family: Verdana, sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+  color: #3b3331;
+  font-weight: 400;
+  font-style: normal;
+  justify-content: center;
+  white-space: pre-wrap;
+}
+
+/* Yellow horizontal divider */
+.cards5 h3::before {
+  content: '';
+  position: absolute;
+  background-color: #ffcd41;
+  height: 2px;
+  left: 0;
+  top: 0;
+  width: 24px;
+}
+
+/* Footer with time and read more link */
+.cards5 > div > div:first-child > div > div:last-child > div:last-child {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+/* Time indicator container */
+.cards5 > div > div:first-child > div > div:last-child > div:last-child > div:first-child {
+  display: flex;
+  align-items: center;
+  position: relative;
+  align-self: stretch;
+  flex-shrink: 0;
+}
+
+/* Clock icon wrapper with margin */
+.cards5 > div > div:first-child > div > div:last-child > div:last-child > div:first-child > div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 5px 0 0;
+  box-sizing: border-box;
+  height: 18px;
+  max-width: 112.03px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* Clock icon */
+.cards5 .icon-clock {
+  width: 19px;
+  height: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+/* Time indicator text wrapper */
+.cards5 > div > div:first-child > div > div:last-child > div:last-child > div:first-child > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* Time indicator text */
+.cards5 > div > div:first-child > div > div:last-child > div:last-child > div:first-child p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  font-family: Verdana, sans-serif;
+  font-size: 11.8px;
+  font-weight: 700;
+  font-style: normal;
+  color: #3b3331;
+  line-height: 19.5px;
+  letter-spacing: 0.3px;
+  white-space: pre;
+  text-wrap: nowrap;
+}
+
+/* Read more link container */
+.cards5 > div > div:first-child > div > div:last-child > div:last-child > div:last-child {
+  display: flex;
+  align-items: center;
+  position: relative;
+  align-self: stretch;
+  flex-shrink: 0;
+}
+
+/* Read more text wrapper with margin */
+.cards5 > div > div:first-child > div > div:last-child > div:last-child > div:last-child > div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 5px 0 0;
+  box-sizing: border-box;
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* Read more link */
+.cards5 > div > div:first-child > div > div:last-child > div:last-child a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Verdana, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  color: #3b3331;
+  line-height: 19.5px;
+  letter-spacing: 0.3px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-underline-position: from-font;
+  white-space: pre;
+  text-wrap: nowrap;
+  margin: 0;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.cards5 > div > div:first-child > div > div:last-child > div:last-child a:hover {
+  color: var(--link-hover-color);
+  background: none;
+}
+
+/* Override button styling for read more links */
+.cards5 a.button,
+.cards5 .button-container a {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Verdana, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  color: #3b3331;
+  line-height: 19.5px;
+  letter-spacing: 0.3px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-underline-position: from-font;
+  white-space: pre;
+  text-wrap: nowrap;
+  cursor: pointer;
+}
+
+/* Chevron icon wrapper */
+.cards5 > div > div:first-child > div > div:last-child > div:last-child > div:last-child > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 14px;
+  max-width: 94.27px;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* Chevron icon */
+.cards5 .icon-chevron-right {
+  width: 14px;
+  height: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+@media (width >= 600px) {
+  .cards5 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 900px) {
+  .cards5 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cards5-container .cards5-wrapper {
+    padding: 0 24px;
+  }
+}
